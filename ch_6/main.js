@@ -25,5 +25,5 @@ requirejs(['jquery', 'ramda'], ($, { compose, curry, map, prop }) => {
   // Impure
   const render = compose(Impure.setHtml('#js-main'), images);
   const app = compose(Impure.getJSON(render), url);
-  app('birds');
+  app('dogs');
 });
